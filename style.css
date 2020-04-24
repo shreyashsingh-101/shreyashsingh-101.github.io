@@ -1,3 +1,32 @@
 body {
     background-color: black;
+    color: white;
+    background-image: url(img/wall.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#tex1 {
+    margin-left: 10vh;
+    border: rgb(190, 0, 0);
+    padding: 10%;
+    text-align: center;
+    border-color: white;
+    border-width: 10px;
+    border-style: double;
+    display: inline-block;
+    font-size: 8vh;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#tex2 {
+    margin-top: 10vh;
+    margin-left: 10vh;
+    font-size: 5vh;
+    font-family: 'Dancing Script', cursive;
+}
+
+#dis1 {
+    color: rgb(7, 82, 153);
 }
