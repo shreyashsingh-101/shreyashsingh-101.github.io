@@ -1,25 +1,22 @@
 body {
     background-color: black;
     color: white;
-    background-image: url(img/wall.png);
+    background-image: url(img/wall.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #tex {
-    clear: both;
+    float: right;
 }
 
 #tex1 {
-    margin-left: 10vh;
+    margin: 2vh;
     border: rgb(190, 0, 0);
-    padding: 10%;
+    padding: 2%;
     text-align: center;
-    border-color: white;
-    border-width: 10px;
-    border-style: double;
-    display: inline-block;
-    font-size: 8vh;
+    font-size: 10vh;
     font-family: 'Dancing Script', cursive;
     font-family: 'Permanent Marker', cursive;
     position: relative;
@@ -28,12 +25,12 @@ body {
 #tex2 {
     margin-top: 10vh;
     margin-left: 10vh;
-    font-size: 5vh;
+    font-size: 7vh;
     font-family: 'Dancing Script', cursive;
 }
 
 #dis1 {
-    color: rgb(7, 82, 153);
+    color: rgb(24, 141, 9);
 }
 
 #social {
@@ -51,8 +48,20 @@ body {
 
 #social img {
     width: 7vh;
+    transition-duration: .5s;
+}
+
+#social img:hover {
+    width: 8vh;
+    transition-duration: .5s;
 }
 
 #content {
-    padding: 10vh;
+    font-family: 'Comic Neue', cursive;
+    clear: both;
+    padding: 25%;
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+    word-spacing: .1em;
 }
