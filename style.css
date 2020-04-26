@@ -9,6 +9,7 @@ body {
 
 #tex {
     float: right;
+    clear: both;
 }
 
 #tex1 {
@@ -17,7 +18,6 @@ body {
     padding: 2%;
     text-align: center;
     font-size: 10vh;
-    font-family: 'Dancing Script', cursive;
     font-family: 'Permanent Marker', cursive;
     position: relative;
 }
@@ -40,6 +40,7 @@ body {
     float: left;
     display: inline-flex;
     flex-direction: column;
+    z-index: 100;
 }
 
 #social a {
@@ -64,4 +65,26 @@ body {
     text-align: center;
     font-size: 2rem;
     word-spacing: .1em;
+}
+
+@media only screen and (max-width: 600px) {
+    #tex1 {
+        font-size: 7vh;
+    }
+    #social img {
+        width: 5vh;
+    }
+    #social {
+        margin: 2px;
+        margin-top: 25vh;
+    }
+    #tex2 {
+        margin-top: 10vh;
+        margin-left: 10vh;
+        font-size: 5vh;
+        font-family: 'Dancing Script', cursive;
+    }
+    #content {
+        font-size: 1.5rem;
+    }
 }
