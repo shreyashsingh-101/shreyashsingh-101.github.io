@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: honeydew;
+}
+
+body {
+    background-color: black;
+}
+
+header {
+    margin-top: 10vh;
+    text-align: center;
+    font-family: cursive;
+}
+
+.main-sec {
+    text-align: center;
+    margin-top: 25vh;
+    font-family: fantasy;
+    letter-spacing: .1em;
+    font-size: 1.5em;
+}
+
+.get-jokes {
+    position: relative;
+    top: 5vh;
+    background-color: black;
+    border-radius: 5px;
+    height: 5vh;
+    width: 20vw;
+}
+
+.joke {
+    position: relative;
+    top: 10vh;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
