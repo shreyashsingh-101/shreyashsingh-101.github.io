@@ -1,0 +1,29 @@
+html,
+body {
+    background-color: black;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.heading {
+    color: cyan;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5em;
+    border: cyan 1px solid;
+    justify-self: center;
+    align-self: center;
+    align-content: center;
+    margin: 20vh;
+    margin-top: 10vh;
+}
+
+#map {
+    border-radius: 50px;
+    left: 25vw;
+    justify-content: center;
+    align-self: center;
+    height: 50%;
+    width: 50%;
+}
