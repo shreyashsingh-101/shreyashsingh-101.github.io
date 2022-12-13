@@ -22,7 +22,7 @@ const ProjectItem = ({ name, img, description, code, live}) => {
         minHeight: "300px",
         height: "auto",
         margin: "20px",
-        background: `url(${img.src})`,
+        background: `url(${img})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
