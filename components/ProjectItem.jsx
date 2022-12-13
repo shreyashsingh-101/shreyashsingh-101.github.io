@@ -1,15 +1,10 @@
 "use client";
 
 import { motion } from "framer-motion";
-
-import styles from "../styles";
 import {
   slideIn,
-  staggerContainer,
   textVariant,
   fadeIn,
-  textContainer,
-  staggerChildren,
 } from "../utils/motion";
 
 import { isMobile } from 'react-device-detect';
@@ -27,7 +22,7 @@ const ProjectItem = ({ name, img, description, code, live}) => {
         minHeight: "300px",
         height: "auto",
         margin: "20px",
-        background: `url(${img})`,
+        background: `url(${img.src})`,
         backgroundSize: "cover",
         backgroundRepeat: "no-repeat",
         backgroundPosition: "center",
@@ -80,7 +75,7 @@ const ProjectItem = ({ name, img, description, code, live}) => {
         </motion.div>
       </motion.div>
     </motion.div>
-  );4
+  );
 };
 
 export default ProjectItem;

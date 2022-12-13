@@ -2,9 +2,7 @@
 
 import { motion } from "framer-motion";
 import ContactItem from "../components/ContactItem";
-
-import styles from "../styles";
-import { slideIn, staggerContainer, textVariant2 } from "../utils/motion";
+import { textVariant2 } from "../utils/motion";
 
 const Contact = () => {
   return (
