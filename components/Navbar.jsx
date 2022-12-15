@@ -23,9 +23,7 @@ const Navbar = () => {
       <div
         className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}
       >
-        <h2 className="logo text-[24px] leading-[35px] text-white">
-          Shreyash
-        </h2>
+        <h2 className="logo text-[24px] leading-[35px] text-white">Shreyash</h2>
 
         <div className="sm:flex">
           <button
@@ -58,21 +56,45 @@ const Navbar = () => {
                 variants={slideIn("left", "spring", 0.2, 1.5)}
                 initial="hidden"
                 whileInView="show"
-              > PROJECTS </motion.li>
+              >
+                {" "}
+                PROJECTS{" "}
+              </motion.li>
             </a>
             <a href="#blogs">
               <motion.li
-              variants={slideIn("left", "spring", 0.3, 1.5)}
-              initial="hidden"
-              whileInView="show"
-              > BLOGS </motion.li>
+                variants={slideIn("left", "spring", 0.3, 1.5)}
+                initial="hidden"
+                whileInView="show"
+              >
+                {" "}
+                BLOGS{" "}
+              </motion.li>
             </a>
+            <a
+              target="_blank"
+              rel={"noreferrer"}
+              href="https://drive.google.com/file/d/13JySeiKlAXHBeqzVKB8Q-TvI55tE7JLF/view?usp=sharing"
+            >
+              <motion.li
+                variants={slideIn("left", "spring", 0.4, 1.5)}
+                initial="hidden"
+                whileInView="show"
+              >
+                {" "}
+                RESUME{" "}
+              </motion.li>
+            </a>
+
             <a href="#connect">
               <motion.li
-              variants={slideIn("left", "spring", 0.4, 1.5)}
-              initial="hidden"
-              whileInView="show"
-              > CONNECT </motion.li>
+                variants={slideIn("left", "spring", 0.5, 1.5)}
+                initial="hidden"
+                whileInView="show"
+              >
+                {" "}
+                CONNECT{" "}
+              </motion.li>
             </a>
           </ul>
         </div>
