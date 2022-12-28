@@ -102,3 +102,10 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(114, 114, 114);
 }
+
+
+/* Selection */
+
+::selection {
+  background-color: transparent;
+}
