@@ -8,7 +8,6 @@ const Carousel = dynamic(() => import("react-spring-3d-carousel"), {
   ssr: false,
 });
 
-import styles from "../styles";
 import { staggerContainer } from "../utils/motion";
 import { useState, useRef } from "react";
 
