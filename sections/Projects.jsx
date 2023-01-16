@@ -12,7 +12,7 @@ import { staggerContainer } from "../utils/motion";
 import { useState, useRef } from "react";
 
 const Projects = () => {
-  const [goToSlide, setGoToSlide] = useState(0);
+  const [goToSlide, setGoToSlide] = useState(3);
 
   const [xDown, setXDown] = useState(null);
 
@@ -84,6 +84,36 @@ const Projects = () => {
           }
           live={"https://confident-tereshkova-2c7135.netlify.app"}
           description={"React based meme generator which uses imgflip API."}
+        />
+      ),
+    },
+
+    {
+      key: 3,
+      content: (
+        <ProjectItem
+          name={"Typos"}
+          img={"/p4.PNG"}
+          code={"https://github.com/shreyashsingh-101/typos"}
+          live={"https://typos.vercel.app"}
+          description={
+            "A Typing speed test app made using React and Tailwind CSS, with Firebase authentication."
+          }
+        />
+      ),
+    },
+
+    {
+      key: 4,
+      content: (
+        <ProjectItem
+          name={"AI Song Writer"}
+          img={"/p5.PNG"}
+          code={"https://github.com/shreyashsingh-101/gpt3-project"}
+          live={"https://ai-song-writer.up.railway.app"}
+          description={
+            "A web app that uses OpenAI's GPT-3 API to generate song lyrics, in the style of Drake."
+          }
         />
       ),
     },
