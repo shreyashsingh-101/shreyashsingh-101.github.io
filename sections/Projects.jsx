@@ -9,7 +9,7 @@ const Carousel = dynamic(() => import("react-spring-3d-carousel"), {
 });
 
 import { staggerContainer } from "../utils/motion";
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 const Projects = () => {
   const [goToSlide, setGoToSlide] = useState(3);
@@ -130,7 +130,7 @@ const Projects = () => {
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
-        className={`mx-auto flex flex-col items-center h-[600px] w-[100%]`}
+        className={`mx-auto flex flex-col items-center h-[600px] w-[25%] md:w-[85%]`}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
       >
