@@ -16,8 +16,6 @@ const Projects = () => {
 
   const [xDown, setXDown] = useState(null);
 
-  const myRef = useRef(null);
-
   const handleTouchStart = (e) => {
     const firstTouch = e.touches[0];
     setXDown(firstTouch.clientX);
@@ -45,12 +43,12 @@ const Projects = () => {
       key: 0,
       content: (
         <ProjectItem
-          name={"React Piano"}
-          img={"/p1.PNG"}
-          code={"https://github.com/shreyashsingh-101/Piano"}
-          live={"https://ssreact-piano.netlify.app"}
+          name={"AI Song Writer"}
+          img={"/p5.PNG"}
+          code={"https://github.com/shreyashsingh-101/gpt3-project"}
+          live={"https://ai-song-generator.onrender.com"}
           description={
-            "A beautiful piano created using React, HTML and CSS which is mobile device friendly and can be played using touch and keyboard."
+            "A web app that uses OpenAI's GPT-3 API to generate song lyrics, in the style of Drake."
           }
         />
       ),
@@ -60,14 +58,12 @@ const Projects = () => {
       key: 1,
       content: (
         <ProjectItem
-          name={"The Memory Game"}
-          img={"/p2.PNG"}
-          code={
-            "https://github.com/shreyashsingh-101/Devsnest-Tasks/tree/master/THA%20Day%2010"
-          }
-          live={"https://shreyashsingh.me/Devsnest-Tasks/THA%20Day%2010"}
+          name={"Typos"}
+          img={"/p4.PNG"}
+          code={"https://github.com/shreyashsingh-101/typos"}
+          live={"https://typos.vercel.app"}
           description={
-            "A mobile-friendly, JavaScript based game that puts your memory to test"
+            "A Typing speed test app made using React and Tailwind CSS, with Firebase authentication."
           }
         />
       ),
@@ -92,12 +88,14 @@ const Projects = () => {
       key: 3,
       content: (
         <ProjectItem
-          name={"Typos"}
-          img={"/p4.PNG"}
-          code={"https://github.com/shreyashsingh-101/typos"}
-          live={"https://typos.vercel.app"}
+          name={"The Memory Game"}
+          img={"/p2.PNG"}
+          code={
+            "https://github.com/shreyashsingh-101/Devsnest-Tasks/tree/master/THA%20Day%2010"
+          }
+          live={"https://shreyashsingh.me/Devsnest-Tasks/THA%20Day%2010"}
           description={
-            "A Typing speed test app made using React and Tailwind CSS, with Firebase authentication."
+            "A mobile-friendly, JavaScript based game that puts your memory to test"
           }
         />
       ),
@@ -107,12 +105,12 @@ const Projects = () => {
       key: 4,
       content: (
         <ProjectItem
-          name={"AI Song Writer"}
-          img={"/p5.PNG"}
-          code={"https://github.com/shreyashsingh-101/gpt3-project"}
-          live={"https://ai-song-writer.up.railway.app"}
+          name={"React Piano"}
+          img={"/p1.PNG"}
+          code={"https://github.com/shreyashsingh-101/Piano"}
+          live={"https://ssreact-piano.netlify.app"}
           description={
-            "A web app that uses OpenAI's GPT-3 API to generate song lyrics, in the style of Drake."
+            "A beautiful piano created using React, HTML and CSS which is mobile device friendly and can be played using touch and keyboard."
           }
         />
       ),
