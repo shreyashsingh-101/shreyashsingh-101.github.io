@@ -78,7 +78,7 @@ const Projects = () => {
           code={
             "https://github.com/shreyashsingh-101/Devsnest-Tasks/tree/master/THA%20Day%2010"
           }
-          live={"https://shreyashsingh.me/Devsnest-Tasks/THA%20Day%2010"}
+          live={"https://shreyash.tech/Devsnest-Tasks/THA%20Day%2010"}
           description={
             "A mobile-friendly, JavaScript based game that puts your memory to test"
           }
