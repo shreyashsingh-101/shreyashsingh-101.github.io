@@ -40,21 +40,6 @@ const Projects = () => {
 
   let slides = [
     {
-      key: 0,
-      content: (
-        <ProjectItem
-          name={"AI Song Writer"}
-          img={"/p5.PNG"}
-          code={"https://github.com/shreyashsingh-101/gpt3-project"}
-          live={"https://ai-song-generator.onrender.com"}
-          description={
-            "A web app that uses OpenAI's GPT-3 API to generate song lyrics, in the style of Drake."
-          }
-        />
-      ),
-    },
-
-    {
       key: 1,
       content: (
         <ProjectItem
