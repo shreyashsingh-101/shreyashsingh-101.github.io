@@ -33,7 +33,7 @@ const Contact = () => {
         <ContactItem
           name="Mail"
           image="/mail.svg"
-          link="mailto:rohitsingh9450@hotmail.com"
+          link="mailto:shreyashsingh.dev@gmail.com"
           direction="right"
         />
         <ContactItem
