@@ -1,5 +1,3 @@
-"use client";
-
 import { motion } from "framer-motion";
 import ProjectItem from "../components/ProjectItem";
 import { config } from "react-spring";

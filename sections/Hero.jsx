@@ -1,5 +1,3 @@
-"use client";
-
 import { motion } from "framer-motion";
 import arrowStyles from "../styles/Hero.module.css";
 import styles from "../styles";
