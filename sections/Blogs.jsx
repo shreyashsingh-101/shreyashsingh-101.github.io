@@ -15,7 +15,7 @@ const Blogs = () => {
   const [blogs, setBlogs] = useState([]);
 
   async function getBlogs() {
-    const res = await fetch("https://api.hashnode.com/", {
+    const res = await fetch("https://gql.hashnode.com/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
