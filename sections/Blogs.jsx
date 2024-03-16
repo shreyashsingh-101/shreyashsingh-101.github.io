@@ -45,7 +45,6 @@ const Blogs = () => {
     });
     const data = await res.json().then((data) => {
       setBlogs(data.data.publication.posts.edges.slice(0, 4));
-      console.log(data.data.publication.posts.edges);
     });
   }
 
@@ -72,7 +71,7 @@ const Blogs = () => {
           BLOGS
         </motion.h1>
         {blogs.map((blog) => {
-          return <Blog key={i++} blog={blog} direction={i % 2 ? "left" : "right"} />;
+          return <Blog key={i++} blog={blog.node} direction={i % 2 ? "left" : "right"} />;
         })}
       </motion.div>
     </section>
