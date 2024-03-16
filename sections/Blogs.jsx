@@ -22,18 +22,24 @@ const Blogs = () => {
       },
       body: JSON.stringify({
         query: `
-              query{
-                  user(username: "shreyashsingh-101") {
-                      publication {
-                          posts(page: 0) {
-                              title
-                              brief
-                              coverImage
-                              slug
-                          }
+                query Publication {
+                  publication(host: "shreyashsingh101.hashnode.dev") {
+                    isTeam,
+                    title,
+                    posts(first: 10) {
+                      edges {
+                        node {
+                          title,
+                          brief,
+                          coverImage{
+                            url
+                          },
+                          slug
+                        }
                       }
+                    }
                   }
-              }
+                }
           `,
       }),
     });
@@ -66,7 +72,7 @@ const Blogs = () => {
           BLOGS
         </motion.h1>
         {blogs.map((blog) => {
-          return <Blog key={i++} blog={blog} direction={i%2?"left":"right"} />;
+          return <Blog key={i++} blog={blog} direction={i % 2 ? "left" : "right"} />;
         })}
       </motion.div>
     </section>

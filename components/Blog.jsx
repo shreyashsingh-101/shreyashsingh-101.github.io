@@ -19,7 +19,7 @@ const Blog = ({ blog, direction }) => {
         minHeight: "300px",
         height: "auto",
         margin: "20px",
-        background: `url(${blog.coverImage})`,
+        background: `url(${blog.coverImage.url})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
