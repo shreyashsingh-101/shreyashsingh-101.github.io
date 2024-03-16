@@ -44,8 +44,8 @@ const Blogs = () => {
       }),
     });
     const data = await res.json().then((data) => {
-      setBlogs(data.data.user.publication.posts.slice(0, 4));
-      console.log("called");
+      setBlogs(data.data.publication.posts.edges.slice(0, 4));
+      console.log(data.data.publication.posts.edges);
     });
   }
 
