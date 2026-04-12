@@ -21,6 +21,9 @@ function MyApp({ Component, pageProps }) {
           href="https://fonts.gstatic.com"
           crossOrigin="true"
         />
+            <!-- begin Convert Experiences code-->
+              <script type="text/javascript" src="//cdn-4.convertexperiments.com/v1/js/10019181-10019516.js?environment=production"></script>
+            <!-- end Convert Experiences code -->
       </Head>
 
       <Component {...pageProps} />
